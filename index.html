@@ -1,352 +1,360 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta content="" name="description">
     <meta content="" name="keywords">
     <meta content="width=device-width, initial-scale=1" name="viewport">
     <title>TailWindCss Example</title>
-    <link href="assets/css/tailwind.css" rel="stylesheet"/>
+    <link href="assets/css/tailwind.css" rel="stylesheet" />
     <script src="https://unpkg.com/feather-icons"></script>
 </head>
-<body>
-<nav class="bg-tea shadow-lg">
-    <div class="max-w-6xl mx-auto px-4">
-        <div class="flex justify-between">
-            <div class="flex space-x-7">
-                <!-- Website Logo-->
-                <div>
-                    <a class="flex items-center py-4 px-2" href="#">
-                        <div class="w-10 h-20 bg-no-repeat bg-center"
-                             style="background-image: url('/assets/imgs/logo-leaves.png');">
-                        </div>
-                        <span class="text-3xl text-white font-bold">teahouse</span>
-                    </a>
-                </div>
-            </div>
-            <!-- Primary Navigation -->
-            <div class="hidden md:flex items-center space-x-3">
-                <div class="hidden md:flex items-center space-x-1">
-                    <a class="py-1 px-2 text-white border-b-2 border-tea" href="">Home</a>
-                    <a class="py-1 px-2 text-white hover:text-tea-dark transition duration-300" href="">Shop</a>
-                    <a class="py-1 px-2 text-white hover:text-tea-dark transition duration-300" href="">About</a>
-                    <a class="py-1 px-2 text-white hover:text-tea-dark transition duration-300" href="">Contact
-                                                                                                        Us</a>
-                    <a class="py-1 px-2 text-white hover:text-tea-dark transition duration-300" href=""><em
-                            data-feather="search"></em></a>
-                    <a class="py-1 px-2 text-white hover:text-tea-dark transition duration-300" href=""><em
-                            data-feather="user"></em></a>
-                    <a class="py-1 px-2 text-white hover:text-tea-dark transition duration-300" href=""><em
-                            data-feather="shopping-bag"></em></a>
-                </div>
-            </div>
-            <div class="md:hidden flex items-center">
-                <button class="outline-none mobile-menu-button">
-                    <svg class=" w-6 h-6 text-white hover:text-tea " fill="none" stroke="currentColor"
-                         stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"
-                         x-show="!showMenu">
-                        <path d="M4 6h16M4 12h16M4 18h16"></path>
-                    </svg>
-                </button>
-            </div>
-        </div>
-    </div>
-    <!-- mobile menu -->
-    <div class="hidden mobile-menu">
-        <ul class="">
-            <li class="active"><a class="block text-sm px-2 py-4 text-white bg-tea font-semibold"
-                                  href="index.html">Home</a></li>
-            <li><a class="block text-sm text-white px-2 py-4 hover:bg-tea-light transition duration-300"
-                   href="#">Products</a>
-            </li>
-            <li><a class="block text-sm px-2 py-4 text-white hover:bg-tea-light transition duration-300"
-                   href="#">About</a>
-            </li>
-            <li><a class="block text-sm text-white px-2 py-4 hover:bg-tea-light transition duration-300"
-                   href="#">Contact
-                            Us</a>
-            </li>
-            <li>
-                <a class="block text-sm text-white px-2 py-4 hover:bg-tea-light transition duration-300" href="">
-                    <em data-feather="search"></em> </a>
-            </li>
-            <li>
-                <a class="block text-sm text-white px-2 py-4 hover:bg-tea-light transition duration-300" href=""><em
-                        data-feather="user"></em></a>
-            </li>
-            <li>
-                <a class="block text-sm text-white px-2 py-4 hover:bg-tea-light transition duration-300" href=""><em
-                        data-feather="shopping-bag"></em></a>
-            </li>
-        </ul>
-    </div>
-</nav>
-<div class="w-full h-main-banner lg:h-main-banner-md bg-cover bg-no-repeat bg-center"
-     style="background-image: url('/assets/imgs/christmas-cracker-bg.png');">
-    <div class="max-w-md m-auto">
-        <h1 class="pt-28 text-center text-white text-4xl font-bold lg:text-6xl xl:text-7xl p-4 uppercase">
-            Christmas <br class="lg:hidden"/> Crackers</h1>
-        <p class="m-auto italic text-white text-center">Share the taste of christmas</p>
-        <a class="w-1/2 mt-8 mx-auto block bg-tea-light border-8 border-opacity-20  border-gray-50 p-2 text-white text-center hover:bg-tea-dark rounded hover:border-white font-bold"
-           href="#">Discover
-                    More</a>
-    </div>
-</div>
-<div class="container mx-auto max-w-6xl">
-    <h2 class="text-center text-4xl mt-24 mb-10 font-bold">Our best sellers</h2>
-    <div class="md:grid md:grid-cols-4 gap-x-10">
-        <div>
-            <img alt="Autumn fire feel the stress drift off" class="m-auto" height="280"
-                 src="assets/imgs/Autumn-Fire.png"
-                 width="280">
-            <h3 class="text-center text-xl font-semibold mt-0 mb-2 bg-no-repeat pt-10 bg-top"
-                style="background-image: url('assets/imgs/stars.png');">
-                Autumn Fire</h3>
-            <p class="text-center text-gray-400 text-sm">&pound;2.00 - &pound;7.00</p>
-        </div>
-        <div>
-            <img alt="Butter Truffle the fond moments" class="m-auto" height="280" src="assets/imgs/Butter-Truffle.png"
-                 width="280">
-            <h3 class="text-center text-xl font-semibold mt-0 mb-2 bg-no-repeat bg-top pt-10"
-                style="background-image: url('assets/imgs/stars.png');">
-                Butter Truffle</h3>
-            <p class="text-center text-gray-400 text-sm">&pound;2.00 - &pound;11.00</p>
-        </div>
-        <div>
-            <img alt="English Breakfast just how you like it" class="m-auto" height="280"
-                 src="assets/imgs/English-Breakfast.png"
-                 width="280">
-            <h3 class="text-center text-xl font-semibold mt-0 mb-2 bg-no-repeat bg-top pt-10"
-                style="background-image: url('assets/imgs/stars.png');">
-                English Breakfast</h3>
-            <p class="text-center text-gray-400 text-sm">&pound;4.00 - &pound;8.50</p>
-        </div>
-        <div>
-            <img alt="Champagne Cassis touch of class" class="m-auto" height="280"
-                 src="assets/imgs/Champagne-Cassis.png"
-                 width="280">
-            <h3 class="text-center text-xl font-semibold mt-0 mb-2 bg-no-repeat bg-top pt-10"
-                style="background-image: url('assets/imgs/stars.png');">
-                Champagne Cassis</h3>
-            <p class="text-center text-gray-400 text-sm">&pound;7.00 - &pound;12.00</p>
-        </div>
-    </div>
-</div>
-<div class="container mx-auto max-w-6xl">
-    <a class="w-1/3 mt-16 mx-auto block bg-tea-light border-8 border-opacity-20  border-gray-50 p-2 text-white text-center hover:bg-tea-dark rounded hover:border-tea-light font-bold"
-       href="#">All Loose Tea</a>
-</div>
-<div class="container mx-auto max-w-6xl">
-    <h2 class="text-center text-4xl mt-24 mb-10 font-bold">New Arrivals</h2>
-    <div class="md:grid md:grid-cols-4 md:gap-x-0 md:gap-y-0">
-        <div class="md:border-b-2 md:border-r-2 md:border-gray-100 pb-10">
-            <img alt="" class="m-auto" height="258" src="assets/imgs/10__02768.png" width="280">
-            <h3 class="text-center text-xl font-semibold mt-0 mb-2 bg-no-repeat bg-top pt-10 "
-                style="background-image: url('assets/imgs/stars-grey.png');">
-                Mint Flake</h3>
-            <p class="text-center text-gray-400 text-sm">&pound;7.00 - &pound;12.00</p>
-            <a class="border-2 border-gray-100 text-tea-light text-center m-auto w-28 font-bold block text-sm mt-4 hover:border-tea-light"
-               href="#">Add To Cart</a>
-        </div>
-        <div class="md:border-b-2 md:border-r-2 md:border-gray-100">
-            <img alt="" class="m-auto" height="258" src="assets/imgs/5__93588.png " width="280">
-            <h3 class="text-center text-xl font-semibold mt-0 mb-2 bg-no-repeat bg-top pt-10 "
-                style="background-image: url('assets/imgs/stars-grey.png');">Luscious Green</h3>
-            <p class="text-center text-gray-400 text-sm">&pound;7.00 - &pound;12.00</p>
-            <a class="border-2 border-gray-100 text-tea-light text-center m-auto w-28 font-bold block text-sm mt-4 hover:border-tea-light"
-               href="#">Add To Cart</a>
-        </div>
-        <div class="md:border-b-2 md:border-r-2 md:border-gray-100">
-            <img alt="" class="m-auto" height="258" src="assets/imgs/17__70929%201.png" width="280">
-            <h3 class="text-center text-xl font-semibold mt-0 mb-2 bg-no-repeat bg-top pt-10 "
-                style="background-image: url('assets/imgs/stars-grey.png');">
-                Dark Destroyer</h3>
-            <p class="text-center text-gray-400 text-sm">&pound;7.00 - &pound;12.00</p>
-            <a class="border-2 border-gray-100 text-tea-light text-center m-auto w-28 font-bold  block text-sm mt-4 hover:border-tea-light"
-               href="#">Add
-                        To Cart</a>
-        </div>
-        <div class="md:border-b-2 md:border-gray-100">
-            <img alt="" class="m-auto" height="258" src="assets/imgs/12__05880%201.png" width="280">
-            <h3 class="text-center text-xl font-semibold mt-0 mb-2 bg-no-repeat bg-top pt-10 "
-                style="background-image: url('assets/imgs/stars-grey.png');">
-                Double Choc</h3>
-            <p class="text-center text-gray-400 text-sm">&pound;7.00 - &pound;12.00</p>
-            <a class="border-2 border-gray-100 text-tea-light text-center m-auto w-28 font-bold  block text-sm mt-4 hover:border-tea-light"
-               href="#">Add
-                        To Cart</a>
-        </div>
-        <div class="md:border-r-2 md:border-gray-100 md:pb-10">
-            <img alt="" class="m-auto" height="258" src="assets/imgs/5__93588.png" width="280">
-            <h3 class="text-center text-xl font-semibold mt-0 mb-2 bg-no-repeat bg-top pt-10 "
-                style="background-image: url('assets/imgs/stars-grey.png');">
-                Evening Smooth</h3>
-            <p class="text-center text-gray-400 text-sm">&pound;7.00 - &pound;12.00</p>
-            <a class="border-2 border-gray-100 text-tea-light text-center m-auto w-28 font-bold  block text-sm mt-4 hover:border-tea-light"
-               href="#">Add
-                        To Cart</a>
-        </div>
-        <div class="md:border-r-2 md:border-gray-100">
-            <img alt="" class="m-auto" height="258" src="assets/imgs/6__51385.png" width="280">
-            <h3 class="text-center text-xl font-semibold mt-0 mb-2 bg-no-repeat bg-top pt-10 "
-                style="background-image: url('assets/imgs/stars-grey.png');">
-                Green Jive</h3>
-            <p class="text-center text-gray-400 text-sm">&pound;7.00 - &pound;12.00</p>
-            <a class="border-2 border-gray-100 text-tea-light text-center m-auto w-28 font-bold  block text-sm mt-4 hover:border-tea-light"
-               href="#">Add
-                        To Cart</a>
-        </div>
-        <div class="md:border-r-2 md:border-gray-100">
-            <img alt="" class="m-auto" height="258" src="assets/imgs/8__92014.png" width="280">
-            <h3 class="text-center text-xl font-semibold mt-0 mb-2 bg-no-repeat bg-top pt-10 "
-                style="background-image: url('assets/imgs/stars-grey.png');">
-                Purple Haze</h3>
-            <p class="text-center text-gray-400 text-sm">&pound;7.00 - &pound;12.00</p>
-            <a class="border-2 border-gray-100 text-tea-light text-center m-auto w-28 font-bold  block text-sm mt-4 hover:border-tea-light"
-               href="#">Add
-                        To Cart</a>
-        </div>
-        <div>
-            <img alt="" class="m-auto" height="258" src="assets/imgs/10__02768.png" width="280">
-            <h3 class="text-center text-xl font-semibold mt-0 mb-2 bg-no-repeat bg-top pt-10 "
-                style="background-image: url('assets/imgs/stars-grey.png');">
-                Morning Rise</h3>
-            <p class="text-center text-gray-400 text-sm">&pound;7.00 - &pound;12.00</p>
-            <a class="border-2 border-gray-100 text-tea-light text-center m-auto w-28 font-bold  block text-sm mt-4 hover:border-tea-light"
-               href="#">Add To Cart</a>
-        </div>
-    </div>
-</div>
-<div class="bg-tea mt-28">
-    <div class="container m-auto max-w-6xl">
-        <div class="grid grid-cols-2 text-white md:grid-cols-4">
-            <div class="text-center p-4 lg:flex lg:items-center">
-                <div class="bg-tea-dark p-4 w-16  rounded m-auto mb-2 hover:bg-tea-light lg:flex-initial lg:mt-2 ">
-                    <img alt="Next Day Delivery" class="m-auto" height="36" src="assets/imgs/carbon_rocket.png"
-                         width="36">
-                </div>
-                <div>
-                    <p>Next Day Delivery</p>
-                    <p class="text-sm opacity-75">Uk orders only.</p>
-                </div>
-            </div>
-            <div class="text-center p-4 lg:flex lg:items-center">
-                <div class="bg-tea-dark p-4 w-16  rounded m-auto mb-2 hover:bg-tea-light lg:flex-initial lg:mt-2">
-                    <img alt="Best online support." class="m-auto" height="36" src="assets/imgs/support-agent.png"
-                         width="36">
-                </div>
-                <div>
-                    <p>Best online support</p>
-                    <p class="text-sm opacity-75">Hours 8am - 11pm</p>
-                </div>
-            </div>
-            <div class="text-center p-4 lg:flex lg:items-center">
-                <div class="bg-tea-dark p-4 w-16  rounded m-auto mb-2 hover:bg-tea-light lg:flex-initial lg:mt-2">
-                    <img alt="World Wide Delivery" class="m-auto" height="36" src="assets/imgs/carbon_delivery.png"
-                         width="36">
-                </div>
-                <div>
-                    <p>World Wide Delivery</p>
-                    <p class="text-sm opacity-75">Orders over &pound;100</p>
-                </div>
-            </div>
-            <div class="text-center p-4 lg:flex lg:items-center">
-                <div class="bg-tea-dark p-4 w-16  rounded m-auto mb-2 hover:bg-tea-light lg:flex-initial lg:mt-2">
-                    <img alt="Savings every week." class="m-auto" height="36" src="assets/imgs/savings.png" width="36">
-                </div>
-                <div>
-                    <p>Best online support</p>
-                    <p class="text-sm opacity-75">Hours 8am - 11pm</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="bg-cover bg-fixed bg-no-repeat bg-center pt-24 pb-24" id="tea-club"
-     style="background-image: url('assets/imgs/tea-club-bg-img.png'); background-position: 0 -10px">
-    <div class="container m-auto max-w-6xl">
-        <div class="w-full m-auto lg:flex">
-            <img alt="Mint Tea Cup" class="hidden lg:block" height="479" src="assets/imgs/mint-teacup.png" width="458">
-            <div class="bg-white p-4 ml-5 mr-5 rounded md:ml-16 md:mr-16 md:p-16 lg:ml-0 lg:pt-28">
-                <span class=" block text-xl font-bold text-gray-400 mb-4">tea club</span>
-                <h4 class="font-bold text-3xl mb-6">Experience the<br/> world of tea</h4>
-                <p class="text-gray-500 md:pr-32 lg:pr-1">Russian profession pins harm union shapes too, slide year
-                                                          become outside selections routers freedom,
-                                                          sticks apply poland locks logitech nudist becoming, homes
-                                                          lounge robot height possibility mtv. </p>
-                <a class="w-max mt-5 mb-5 block bg-tea-light border-8 border-opacity-20  border-gray-50 p-2 text-white text-center hover:bg-tea-dark rounded hover:border-tea-light font-bold"
-                   href="#">Join
-                            the
-                            tea
-                            club</a>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="container mx-auto max-w-6xl mb-32 md:pl-4 md:pr-4">
-    <h2 class="text-center text-4xl mt-24 mb-10 font-bold">From the blog</h2>
-    <div class="md:grid md:grid-cols-2 md:gap-x-5 md:gap-y-5 lg:grid-cols-3">
-        <div class="m-2 bg-gray-100 rounded p-4 md:m-0">
-            <img alt="Tea World" height="228" src="assets/imgs/blog-1.png" width="381">
-            <div class="bg-white mt-0 p-4">
-                <span class="text-sm text-gray-400">26th Nov 2021</span>
-                <h3 class="text-xl font-bold mt-4 mb-4">But karl sitting fallen shares mass electronics </h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                   et dolore magna aliqua.</p><a class="mt-4 text-tea-light block text-right hover:text-tea-dark text-sm"
-                                                 href="#">Read More</a>
-            </div>
-        </div>
-        <div class="m-2 bg-gray-100 rounded p-4 md:m-0">
-            <img alt="Tea World" height="228" src="assets/imgs/blog-2.png" width="381">
-            <div class="bg-white mt-0 p-4">
-                <span class="text-sm text-gray-400">27th Nov 2021</span>
-                <h3 class="text-xl font-bold mt-4 mb-4">Displayed condo answering discounted reduces treated</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt et dolore magna aliqua bla bla bla</p><a class="mt-4 text-tea-light block text-right hover:text-tea-dark text-sm"
-                                                 href="#">Read More</a>
-            </div>
-        </div>
-        <div class="m-2 bg-gray-100 rounded p-4 md:m-0 md:hidden lg:block">
-            <img alt="Tea World" height="228" src="assets/imgs/blog-1.png" width="381">
-            <div class="bg-white mt-0 p-4">
-                <span class="text-sm text-gray-400">28th Nov 2021</span>
-                <h3 class="text-xl font-bold mt-4 mb-4">Levels onto proc stake concerts ladder via</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                   et dolore magna aliqua</p><a class="mt-4 text-tea-light block text-right hover:text-tea-dark text-sm"
-                                                 href="#">Read More</a>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="bg-tea">
-    <div class="container mx-auto max-w-6xl md:grid md:grid-cols-3 md:gap-x-10">
-        <div class="flex text-white p-4">
-        <em class="mr-3" data-feather="map-pin"></em>
-            <p class="text-sm text-gray-100"><span class="font-bold text-white uppercase text-lg">Our Address</span><br />
-            52 - 75 Bond St London</p>
-        </div>
-        <div class="flex text-white p-4">
-        <em class="mr-3" data-feather="phone"></em>
-            <p class="text-sm text-gray-100"><span class="uppercase font-bold text-white text-lg">Call us free</span><br />( +12 ) 404 567832</p>
-        </div>
-        <div class="flex text-white p-4">
-        <em class="mr-3" data-feather="mail"></em>
-            <p class="text-sm text-gray-100"><span class="uppercase font-bold text-white text-lg">Email Now</span><br />someemail@gmail.com</p>
-        </div>
-    </div>
-</div>
-<div class="container mx-auto max-w-6xl">
-    <h2 class="text-center text-4xl mt-24 mb-10 font-bold">We are proud work with</h2>
-    <div class="grid grid-cols-3 gap-10">
 
+<body>
+    <nav class="bg-tea shadow-lg">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex justify-between">
+                <div class="flex space-x-7">
+                    <!-- Website Logo-->
+                    <div>
+                        <a class="flex items-center py-4 px-2" href="#">
+                            <div class="w-10 h-20 bg-no-repeat bg-center"
+                                style="background-image: url('/assets/imgs/logo-leaves.png');">
+                            </div>
+                            <span class="text-3xl text-white font-bold">teahouse</span>
+                        </a>
+                    </div>
+                </div>
+                <!-- Primary Navigation -->
+                <div class="hidden md:flex items-center space-x-3">
+                    <div class="hidden md:flex items-center space-x-1">
+                        <a class="py-1 px-2 text-white border-b-2 border-tea" href="">Home</a>
+                        <a class="py-1 px-2 text-white hover:text-tea-dark transition duration-300" href="">Shop</a>
+                        <a class="py-1 px-2 text-white hover:text-tea-dark transition duration-300" href="">About</a>
+                        <a class="py-1 px-2 text-white hover:text-tea-dark transition duration-300" href="">Contact
+                            Us</a>
+                        <a class="py-1 px-2 text-white hover:text-tea-dark transition duration-300" href=""><em
+                                data-feather="search"></em></a>
+                        <a class="py-1 px-2 text-white hover:text-tea-dark transition duration-300" href=""><em
+                                data-feather="user"></em></a>
+                        <a class="py-1 px-2 text-white hover:text-tea-dark transition duration-300" href=""><em
+                                data-feather="shopping-bag"></em></a>
+                    </div>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button class="outline-none mobile-menu-button">
+                        <svg class=" w-6 h-6 text-white hover:text-tea " fill="none" stroke="currentColor"
+                            stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"
+                            x-show="!showMenu">
+                            <path d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- mobile menu -->
+        <div class="hidden mobile-menu">
+            <ul class="">
+                <li class="active"><a class="block text-sm px-2 py-4 text-white bg-tea font-semibold"
+                        href="index.html">Home</a></li>
+                <li><a class="block text-sm text-white px-2 py-4 hover:bg-tea-light transition duration-300"
+                        href="#">Products</a>
+                </li>
+                <li><a class="block text-sm px-2 py-4 text-white hover:bg-tea-light transition duration-300"
+                        href="#">About</a>
+                </li>
+                <li><a class="block text-sm text-white px-2 py-4 hover:bg-tea-light transition duration-300"
+                        href="#">Contact
+                        Us</a>
+                </li>
+                <li>
+                    <a class="block text-sm text-white px-2 py-4 hover:bg-tea-light transition duration-300" href="">
+                        <em data-feather="search"></em> </a>
+                </li>
+                <li>
+                    <a class="block text-sm text-white px-2 py-4 hover:bg-tea-light transition duration-300" href=""><em
+                            data-feather="user"></em></a>
+                </li>
+                <li>
+                    <a class="block text-sm text-white px-2 py-4 hover:bg-tea-light transition duration-300" href=""><em
+                            data-feather="shopping-bag"></em></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="w-full h-main-banner lg:h-main-banner-md bg-cover bg-no-repeat bg-center"
+        style="background-image: url('/assets/imgs/christmas-cracker-bg.png');">
+        <div class="max-w-md m-auto">
+            <h1 class="pt-28 text-center text-white text-4xl font-bold lg:text-6xl xl:text-7xl p-4 uppercase">
+                Christmas <br class="lg:hidden" /> Crackers</h1>
+            <p class="m-auto italic text-white text-center">Share the taste of christmas</p>
+            <a class="w-1/2 mt-8 mx-auto block bg-tea-light border-8 border-opacity-20  border-gray-50 p-2 text-white text-center hover:bg-tea-dark rounded hover:border-white font-bold"
+                href="#">Discover
+                More</a>
+        </div>
     </div>
-</div>
-<script>
-  const btn = document.querySelector("button.mobile-menu-button");
-  const menu = document.querySelector(".mobile-menu");
-  feather.replace();
-  btn.addEventListener("click", () => {
-    menu.classList.toggle("hidden");
-  });
-</script>
+    <div class="container mx-auto max-w-6xl">
+        <h2 class="text-center text-4xl mt-24 mb-10 font-bold">Our best sellers</h2>
+        <div class="md:grid md:grid-cols-4 gap-x-10">
+            <div>
+                <img alt="Autumn fire feel the stress drift off" class="m-auto" height="280"
+                    src="assets/imgs/Autumn-Fire.png" width="280">
+                <h3 class="text-center text-xl font-semibold mt-0 mb-2 bg-no-repeat pt-10 bg-top"
+                    style="background-image: url('assets/imgs/stars.png');">
+                    Autumn Fire</h3>
+                <p class="text-center text-gray-400 text-sm">&pound;2.00 - &pound;7.00</p>
+            </div>
+            <div>
+                <img alt="Butter Truffle the fond moments" class="m-auto" height="280"
+                    src="assets/imgs/Butter-Truffle.png" width="280">
+                <h3 class="text-center text-xl font-semibold mt-0 mb-2 bg-no-repeat bg-top pt-10"
+                    style="background-image: url('assets/imgs/stars.png');">
+                    Butter Truffle</h3>
+                <p class="text-center text-gray-400 text-sm">&pound;2.00 - &pound;11.00</p>
+            </div>
+            <div>
+                <img alt="English Breakfast just how you like it" class="m-auto" height="280"
+                    src="assets/imgs/English-Breakfast.png" width="280">
+                <h3 class="text-center text-xl font-semibold mt-0 mb-2 bg-no-repeat bg-top pt-10"
+                    style="background-image: url('assets/imgs/stars.png');">
+                    English Breakfast</h3>
+                <p class="text-center text-gray-400 text-sm">&pound;4.00 - &pound;8.50</p>
+            </div>
+            <div>
+                <img alt="Champagne Cassis touch of class" class="m-auto" height="280"
+                    src="assets/imgs/Champagne-Cassis.png" width="280">
+                <h3 class="text-center text-xl font-semibold mt-0 mb-2 bg-no-repeat bg-top pt-10"
+                    style="background-image: url('assets/imgs/stars.png');">
+                    Champagne Cassis</h3>
+                <p class="text-center text-gray-400 text-sm">&pound;7.00 - &pound;12.00</p>
+            </div>
+        </div>
+    </div>
+    <div class="container mx-auto max-w-6xl">
+        <a class="w-1/3 mt-16 mx-auto block bg-tea-light border-8 border-opacity-20  border-gray-50 p-2 text-white text-center hover:bg-tea-dark rounded hover:border-tea-light font-bold"
+            href="#">All Loose Tea</a>
+    </div>
+    <div class="container mx-auto max-w-6xl">
+        <h2 class="text-center text-4xl mt-24 mb-10 font-bold">New Arrivals</h2>
+        <div class="md:grid md:grid-cols-4 md:gap-x-0 md:gap-y-0">
+            <div class="md:border-b-2 md:border-r-2 md:border-gray-100 pb-10">
+                <img alt="" class="m-auto" height="258" src="assets/imgs/10__02768.png" width="280">
+                <h3 class="text-center text-xl font-semibold mt-0 mb-2 bg-no-repeat bg-top pt-10 "
+                    style="background-image: url('assets/imgs/stars-grey.png');">
+                    Mint Flake</h3>
+                <p class="text-center text-gray-400 text-sm">&pound;7.00 - &pound;12.00</p>
+                <a class="border-2 border-gray-100 text-tea-light text-center m-auto w-28 font-bold block text-sm mt-4 hover:border-tea-light"
+                    href="#">Add To Cart</a>
+            </div>
+            <div class="md:border-b-2 md:border-r-2 md:border-gray-100">
+                <img alt="" class="m-auto" height="258" src="assets/imgs/5__93588.png " width="280">
+                <h3 class="text-center text-xl font-semibold mt-0 mb-2 bg-no-repeat bg-top pt-10 "
+                    style="background-image: url('assets/imgs/stars-grey.png');">Luscious Green</h3>
+                <p class="text-center text-gray-400 text-sm">&pound;7.00 - &pound;12.00</p>
+                <a class="border-2 border-gray-100 text-tea-light text-center m-auto w-28 font-bold block text-sm mt-4 hover:border-tea-light"
+                    href="#">Add To Cart</a>
+            </div>
+            <div class="md:border-b-2 md:border-r-2 md:border-gray-100">
+                <img alt="" class="m-auto" height="258" src="assets/imgs/17__70929%201.png" width="280">
+                <h3 class="text-center text-xl font-semibold mt-0 mb-2 bg-no-repeat bg-top pt-10 "
+                    style="background-image: url('assets/imgs/stars-grey.png');">
+                    Dark Destroyer</h3>
+                <p class="text-center text-gray-400 text-sm">&pound;7.00 - &pound;12.00</p>
+                <a class="border-2 border-gray-100 text-tea-light text-center m-auto w-28 font-bold  block text-sm mt-4 hover:border-tea-light"
+                    href="#">Add
+                    To Cart</a>
+            </div>
+            <div class="md:border-b-2 md:border-gray-100">
+                <img alt="" class="m-auto" height="258" src="assets/imgs/12__05880%201.png" width="280">
+                <h3 class="text-center text-xl font-semibold mt-0 mb-2 bg-no-repeat bg-top pt-10 "
+                    style="background-image: url('assets/imgs/stars-grey.png');">
+                    Double Choc</h3>
+                <p class="text-center text-gray-400 text-sm">&pound;7.00 - &pound;12.00</p>
+                <a class="border-2 border-gray-100 text-tea-light text-center m-auto w-28 font-bold  block text-sm mt-4 hover:border-tea-light"
+                    href="#">Add
+                    To Cart</a>
+            </div>
+            <div class="md:border-r-2 md:border-gray-100 md:pb-10">
+                <img alt="" class="m-auto" height="258" src="assets/imgs/5__93588.png" width="280">
+                <h3 class="text-center text-xl font-semibold mt-0 mb-2 bg-no-repeat bg-top pt-10 "
+                    style="background-image: url('assets/imgs/stars-grey.png');">
+                    Evening Smooth</h3>
+                <p class="text-center text-gray-400 text-sm">&pound;7.00 - &pound;12.00</p>
+                <a class="border-2 border-gray-100 text-tea-light text-center m-auto w-28 font-bold  block text-sm mt-4 hover:border-tea-light"
+                    href="#">Add
+                    To Cart</a>
+            </div>
+            <div class="md:border-r-2 md:border-gray-100">
+                <img alt="" class="m-auto" height="258" src="assets/imgs/6__51385.png" width="280">
+                <h3 class="text-center text-xl font-semibold mt-0 mb-2 bg-no-repeat bg-top pt-10 "
+                    style="background-image: url('assets/imgs/stars-grey.png');">
+                    Green Jive</h3>
+                <p class="text-center text-gray-400 text-sm">&pound;7.00 - &pound;12.00</p>
+                <a class="border-2 border-gray-100 text-tea-light text-center m-auto w-28 font-bold  block text-sm mt-4 hover:border-tea-light"
+                    href="#">Add
+                    To Cart</a>
+            </div>
+            <div class="md:border-r-2 md:border-gray-100">
+                <img alt="" class="m-auto" height="258" src="assets/imgs/8__92014.png" width="280">
+                <h3 class="text-center text-xl font-semibold mt-0 mb-2 bg-no-repeat bg-top pt-10 "
+                    style="background-image: url('assets/imgs/stars-grey.png');">
+                    Purple Haze</h3>
+                <p class="text-center text-gray-400 text-sm">&pound;7.00 - &pound;12.00</p>
+                <a class="border-2 border-gray-100 text-tea-light text-center m-auto w-28 font-bold  block text-sm mt-4 hover:border-tea-light"
+                    href="#">Add
+                    To Cart</a>
+            </div>
+            <div>
+                <img alt="" class="m-auto" height="258" src="assets/imgs/10__02768.png" width="280">
+                <h3 class="text-center text-xl font-semibold mt-0 mb-2 bg-no-repeat bg-top pt-10 "
+                    style="background-image: url('assets/imgs/stars-grey.png');">
+                    Morning Rise</h3>
+                <p class="text-center text-gray-400 text-sm">&pound;7.00 - &pound;12.00</p>
+                <a class="border-2 border-gray-100 text-tea-light text-center m-auto w-28 font-bold  block text-sm mt-4 hover:border-tea-light"
+                    href="#">Add To Cart</a>
+            </div>
+        </div>
+    </div>
+    <div class="bg-tea mt-28">
+        <div class="container m-auto max-w-6xl">
+            <div class="grid grid-cols-2 text-white md:grid-cols-4">
+                <div class="text-center p-4 lg:flex lg:items-center">
+                    <div class="bg-tea-dark p-4 w-16  rounded m-auto mb-2 hover:bg-tea-light lg:flex-initial lg:mt-2 ">
+                        <img alt="Next Day Delivery" class="m-auto" height="36" src="assets/imgs/carbon_rocket.png"
+                            width="36">
+                    </div>
+                    <div>
+                        <p>Next Day Delivery</p>
+                        <p class="text-sm opacity-75">Uk orders only.</p>
+                    </div>
+                </div>
+                <div class="text-center p-4 lg:flex lg:items-center">
+                    <div class="bg-tea-dark p-4 w-16  rounded m-auto mb-2 hover:bg-tea-light lg:flex-initial lg:mt-2">
+                        <img alt="Best online support." class="m-auto" height="36" src="assets/imgs/support-agent.png"
+                            width="36">
+                    </div>
+                    <div>
+                        <p>Best online support</p>
+                        <p class="text-sm opacity-75">Hours 8am - 11pm</p>
+                    </div>
+                </div>
+                <div class="text-center p-4 lg:flex lg:items-center">
+                    <div class="bg-tea-dark p-4 w-16  rounded m-auto mb-2 hover:bg-tea-light lg:flex-initial lg:mt-2">
+                        <img alt="World Wide Delivery" class="m-auto" height="36" src="assets/imgs/carbon_delivery.png"
+                            width="36">
+                    </div>
+                    <div>
+                        <p>World Wide Deliverys</p>
+                        <p class="text-sm opacity-75">Orders over &pound;100</p>
+                    </div>
+                </div>
+                <div class="text-center p-4 lg:flex lg:items-center">
+                    <div class="bg-tea-dark p-4 w-16  rounded m-auto mb-2 hover:bg-tea-light lg:flex-initial lg:mt-2">
+                        <img alt="Savings every week." class="m-auto" height="36" src="assets/imgs/savings.png"
+                            width="36">
+                    </div>
+                    <div>
+                        <p>Best online support</p>
+                        <p class="text-sm opacity-75">Hours 8am - 11pm</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bg-cover bg-fixed bg-no-repeat bg-center pt-24 pb-24" id="tea-club"
+        style="background-image: url('assets/imgs/tea-club-bg-img.png'); background-position: 0 -10px">
+        <div class="container m-auto max-w-6xl">
+            <div class="w-full m-auto lg:flex">
+                <img alt="Mint Tea Cup" class="hidden lg:block" height="479" src="assets/imgs/mint-teacup.png"
+                    width="458">
+                <div class="bg-white p-4 ml-5 mr-5 rounded md:ml-16 md:mr-16 md:p-16 lg:ml-0 lg:pt-28">
+                    <span class=" block text-xl font-bold text-gray-400 mb-4">tea club</span>
+                    <h4 class="font-bold text-3xl mb-6">Experience the<br /> world of tea</h4>
+                    <p class="text-gray-500 md:pr-32 lg:pr-1">Russian profession pins harm union shapes too, slide year
+                        become outside selections routers freedom,
+                        sticks apply poland locks logitech nudist becoming, homes
+                        lounge robot height possibility mtv. </p>
+                    <a class="w-max mt-5 mb-5 block bg-tea-light border-8 border-opacity-20  border-gray-50 p-2 text-white text-center hover:bg-tea-dark rounded hover:border-tea-light font-bold"
+                        href="#">Join
+                        the
+                        tea
+                        club</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container mx-auto max-w-6xl mb-32 md:pl-4 md:pr-4">
+        <h2 class="text-center text-4xl mt-24 mb-10 font-bold">From the blog</h2>
+        <div class="md:grid md:grid-cols-2 md:gap-x-5 md:gap-y-5 lg:grid-cols-3">
+            <div class="m-2 bg-gray-100 rounded p-4 md:m-0">
+                <img alt="Tea World" height="228" src="assets/imgs/blog-1.png" width="381">
+                <div class="bg-white mt-0 p-4">
+                    <span class="text-sm text-gray-400">26th Nov 2021</span>
+                    <h3 class="text-xl font-bold mt-4 mb-4">But karl sitting fallen shares mass electronics </h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore
+                        et dolore magna aliqua.</p><a
+                        class="mt-4 text-tea-light block text-right hover:text-tea-dark text-sm" href="#">Read More</a>
+                </div>
+            </div>
+            <div class="m-2 bg-gray-100 rounded p-4 md:m-0">
+                <img alt="Tea World" height="228" src="assets/imgs/blog-2.png" width="381">
+                <div class="bg-white mt-0 p-4">
+                    <span class="text-sm text-gray-400">27th Nov 2021</span>
+                    <h3 class="text-xl font-bold mt-4 mb-4">Displayed condo answering discounted reduces treated</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt et
+                        dolore magna aliqua bla bla bla</p><a
+                        class="mt-4 text-tea-light block text-right hover:text-tea-dark text-sm" href="#">Read More</a>
+                </div>
+            </div>
+            <div class="m-2 bg-gray-100 rounded p-4 md:m-0 md:hidden lg:block">
+                <img alt="Tea World" height="228" src="assets/imgs/blog-1.png" width="381">
+                <div class="bg-white mt-0 p-4">
+                    <span class="text-sm text-gray-400">28th Nov 2021</span>
+                    <h3 class="text-xl font-bold mt-4 mb-4">Levels onto proc stake concerts ladder via</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore
+                        et dolore magna aliqua</p><a
+                        class="mt-4 text-tea-light block text-right hover:text-tea-dark text-sm" href="#">Read More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bg-tea">
+        <div class="container mx-auto max-w-6xl md:grid md:grid-cols-3 md:gap-x-10">
+            <div class="flex text-white p-4">
+                <em class="mr-3" data-feather="map-pin"></em>
+                <p class="text-sm text-gray-100"><span class="font-bold text-white uppercase text-lg">Our
+                        Address</span><br />
+                    52 - 75 Bond St London</p>
+            </div>
+            <div class="flex text-white p-4">
+                <em class="mr-3" data-feather="phone"></em>
+                <p class="text-sm text-gray-100"><span class="uppercase font-bold text-white text-lg">Call us
+                        free</span><br />( +12 ) 404 567832</p>
+            </div>
+            <div class="flex text-white p-4">
+                <em class="mr-3" data-feather="mail"></em>
+                <p class="text-sm text-gray-100"><span class="uppercase font-bold text-white text-lg">Email
+                        Now</span><br />someemail@gmail.com</p>
+            </div>
+        </div>
+    </div>
+    <div class="container mx-auto max-w-6xl">
+        <h2 class="text-center text-4xl mt-24 mb-10 font-bold">We are proud work with</h2>
+        <div class="grid grid-cols-3 gap-10">
+
+        </div>
+    </div>
+    <script>
+        const btn = document.querySelector("button.mobile-menu-button");
+        const menu = document.querySelector(".mobile-menu");
+        feather.replace();
+        btn.addEventListener("click", () => {
+            menu.classList.toggle("hidden");
+        });
+    </script>
 </body>
+
 </html>
